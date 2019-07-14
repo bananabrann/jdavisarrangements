@@ -3,15 +3,14 @@ import React from 'react';
 class Nav extends React.Component {
   constructor() {
     super();
-    this.state = { someKey: 'someValue' };
+    this.state = {  };
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return <p>Here be the side nav!</p>;
   }
 
   componentDidMount() {
-    this.setState({ someKey: 'otherValue' });
   }
 }
 

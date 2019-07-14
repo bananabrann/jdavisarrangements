@@ -4,15 +4,16 @@ import './Home.css';
 class Home extends React.Component {
   constructor() {
     super();
-    this.state = { someKey: 'someValue' };
+    this.state = { };
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return(
+      <p>home</p>
+    )
   }
 
   componentDidMount() {
-    this.setState({ someKey: 'otherValue' });
   }
 }
 

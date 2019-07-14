@@ -3,7 +3,7 @@ import React from 'react';
 class Audio extends React.Component {
   constructor() {
     super();
-    this.state = { someKey: 'someValue' };
+    this.state = {};
   }
 
   render() {
@@ -13,7 +13,6 @@ class Audio extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ someKey: 'otherValue' });
   }
 }
 

@@ -7,7 +7,9 @@ class Footer extends React.Component {
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return(
+      <h3>footer</h3>
+    ) 
   }
 
   componentDidMount() {

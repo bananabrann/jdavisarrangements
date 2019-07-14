@@ -19,13 +19,25 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h2>Here be the header</h2>
+          <Header />
         </header>
-        <nav>
-          Here be the side nav bar
 
-        </nav>
+        <main>
+          <nav>
+            <Nav />
+          </nav>
+          <body>
+            <Route path="/" exact component={Home} render={routerProps => <Home />} />
+            <Route path="/about" exact component={About} render={routerProps => <About></About>} />
+            <Route path="/audio" exact component={Audio} render={routerProps => <Audio></Audio>} />
+            <Route path="/products" exact component={Products} render={routerProps => <Products></Products>} />
 
+          </body>
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }

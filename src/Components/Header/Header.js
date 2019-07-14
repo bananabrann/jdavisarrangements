@@ -3,15 +3,17 @@ import React from 'react';
 class Header extends React.Component {
   constructor() {
     super();
-    this.state = { someKey: 'someValue' };
+    this.state = { };
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return( 
+      <h3>header</h3>
+    )
   }
 
   componentDidMount() {
-    this.setState({ someKey: 'otherValue' });
+
   }
 }
 
