@@ -1,5 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Route } from "react-router-dom";
+import About from "../About/About";
+import Audio from "../Audio/Audio";
+import Home from "../Home/Home";
+import Products from "../Products/Products";
 
 function App() {
   return (
