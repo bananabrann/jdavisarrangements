@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import About from "../About/About";
 import Audio from "../Audio/Audio";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
 import Nav from "../Nav/Nav";
@@ -22,6 +23,7 @@ class App extends Component {
         </header>
         <nav>
           Here be the side nav bar
+
         </nav>
 
       </div>
