@@ -3,11 +3,18 @@ import React from 'react';
 class Songs extends React.Component {
   constructor() {
     super();
-    this.state = { someKey: 'someValue' };
+    this.state = { 
+      someKey: "Songs",
+      songs: []
+     };
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return (
+        <div className="container">
+
+        </div>
+      )
   }
 
   componentDidMount() {
