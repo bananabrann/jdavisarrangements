@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
     res.send("I believe it worked");
 });
 
-app.get("/church-windows", (req, res) => {
+app.get("/song", (req, res) => {
     res.json({
         name: "Church Windows",
         composer: "Some dude"
