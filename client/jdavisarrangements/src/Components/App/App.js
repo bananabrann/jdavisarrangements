@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import Dev from "../Dev/Dev";
+import Home from "../Home/Home";
+import Songs from "../Songs/Songs";
+import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer";
+import About from "../About/About";
+
 import "./App.css";
 
 class App extends Component {
@@ -23,8 +29,42 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <h1>{this.state.song.name}</h1>
-                <p>{this.state.song.composer}</p>
+                <nav>
+                    <Nav />
+                </nav>
+
+                <body>
+                    <Route
+                        path="/"
+                        exact
+                        component={Home}
+                        render={routerProps => <Home />}
+                    />
+                    <Route
+                        path="/dev"
+                        exact
+                        component={Dev}
+                        render={routerProps => <Dev />}
+                    />
+                    <Route
+                        path="/songs"
+                        exact
+                        component={Songs}
+                        render={routerProps => <Songs />}
+                    />
+                    <Route
+                        path="/about"
+                        exact
+                        component={About}
+                        render={routerProps => <About />}
+                    />
+                </body>
+
+                <footer>
+                    <Footer />
+                </footer>
+                {/* <h1>{this.state.song.name}</h1>
+                <p>{this.state.song.composer}</p> */}
             </div>
         );
     }
