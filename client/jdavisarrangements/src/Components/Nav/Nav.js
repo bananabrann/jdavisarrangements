@@ -11,7 +11,7 @@ class Nav extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ someKey: 'otherValue' });
+    this.setState({ someKey: 'Navbar' });
   }
 }
 

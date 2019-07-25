@@ -11,7 +11,7 @@ console.log("Steppted into server.js...");
 // router.use("/song", require("./routes/songs"));
 // router.use("/dev", require("./dev"));
 
-app.get("/song", (req, res) => {
+app.get("/songs", (req, res) => {
     res.json({
         name: "Church Windows",
         composer: "Some dude"

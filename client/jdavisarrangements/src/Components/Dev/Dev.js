@@ -7,7 +7,11 @@ class Dev extends React.Component {
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return(
+      <div className="container">
+        <h1>Welcome to dev/admin page</h1>
+      </div>
+    )
   }
 
   componentDidMount() {
