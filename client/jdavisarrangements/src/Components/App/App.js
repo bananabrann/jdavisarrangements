@@ -6,6 +6,7 @@ import Songs from "../Songs/Songs";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import About from "../About/About";
+import Products from "../Products/Products";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ class App extends Component {
         };
         this.getSong();
     }
+
     getSong() {
         fetch("/song")
             .then(response => response.json())
@@ -26,6 +28,7 @@ class App extends Component {
                 });
             });
     }
+
     render() {
         return (
             <div className="App">
@@ -57,6 +60,12 @@ class App extends Component {
                         exact
                         component={About}
                         render={routerProps => <About />}
+                    />
+                    <Route
+                        path="/products"
+                        exact
+                        component={Products}
+                        render={routerProps => <Products />}
                     />
                 </body>
 
