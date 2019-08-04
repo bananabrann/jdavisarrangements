@@ -1,4 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+
+const linkToHome="/";
+const linkToAbout="/about";
+const linkToSongs="/songs";
+const linkToProducts="/products";
 
 class Nav extends React.Component {
   constructor() {
@@ -7,7 +13,11 @@ class Nav extends React.Component {
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return (
+      <div className="Nav-container">
+        <p></p>
+      </div>
+    )
   }
 
   componentDidMount() {
