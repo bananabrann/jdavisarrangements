@@ -2,7 +2,7 @@ const express = require("express");
 const PORT = process.env.HTTP_PORT || 4001;
 const app = express();
 
-import "./data.json";
+import siteData from "./data.json";
 
 console.log("Steppted into server.js...");
 
@@ -13,15 +13,11 @@ console.log("Steppted into server.js...");
 // router.use("/song", require("./routes/songs"));
 // router.use("/dev", require("./dev"));
 
-
-
-app.get("/about", (req, res) => {
+app.get("/songs", (req, res) => {
     res.json({
-        name: "Church Windows",
-        composer: "Some dude"
+        siteData
     });
 });
-
 
 app.listen(PORT, () => {
     console.log(`Server listening at port ${PORT}`);

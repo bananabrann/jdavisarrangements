@@ -14,19 +14,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            song: {}
         };
-        this.getSong();
-    }
-
-    getSong() {
-        fetch("/song")
-            .then(response => response.json())
-            .then(data => {
-                this.setState({
-                    song: data
-                });
-            });
     }
 
     render() {
