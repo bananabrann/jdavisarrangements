@@ -37,16 +37,15 @@ class Songs extends React.Component {
                 <h1>Songs Page</h1>
                 <br />
                 <section>
-                    {songData.map(x => {
+                    {songData.map((currSong, idx) => {
                         return(
-                            <div key={x.id} className="song-container">
-                                <p>YO</p>
-                                {/* <p>{x.title}</p> */}
-
+                            <div key={currSong.id} className="song-container">
+                                <p>id: {currSong.id}</p>
                                 <Song
-                                    title={x.title}
-                                    description={x.description}
+                                    title={currSong.title}
+                                    description={currSong.description}
                                 />
+                                <br />
                             </div>
                         )
                     })}
