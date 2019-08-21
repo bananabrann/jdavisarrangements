@@ -14,6 +14,7 @@ class Songs extends React.Component {
 
     getSongs() {
         console.log("getSongs() called")
+
         fetch("/songs")
             .then(response => response.json())
             .then(d => {
@@ -33,17 +34,19 @@ class Songs extends React.Component {
 
         return (
             <div className="songs-container">
-                <h1>Songs Title</h1>
+                <h1>Songs Page</h1>
+                <br />
                 <section>
                     {songData.map(x => {
                         return(
                             <div key={x.id} className="song-container">
                                 <p>YO</p>
+                                {/* <p>{x.title}</p> */}
 
                                 <Song
                                     title={x.title}
                                     description={x.description}
-                                    />
+                                />
                             </div>
                         )
                     })}
