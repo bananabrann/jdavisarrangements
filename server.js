@@ -19,6 +19,12 @@ app.get("/songs" || "/dev", (req, res) => {
     });
 });
 
+app.get("/dev", (req, res) => {
+    res.json({
+        siteData
+    })
+})
+
 
 
 app.listen(PORT, () => {
