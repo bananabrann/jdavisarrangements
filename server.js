@@ -13,11 +13,13 @@ console.log("Steppted into server.js...");
 // router.use("/song", require("./routes/songs"));
 // router.use("/dev", require("./dev"));
 
-app.get("/songs", (req, res) => {
+app.get("/songs" || "/dev", (req, res) => {
     res.json({
         siteData
     });
 });
+
+
 
 app.listen(PORT, () => {
     console.log(`Server listening at port ${PORT}`);

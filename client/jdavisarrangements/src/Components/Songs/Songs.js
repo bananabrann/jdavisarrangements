@@ -36,6 +36,7 @@ class Songs extends React.Component {
             <div className="songs-container">
                 <h1>Songs Page</h1>
                 <br />
+                
                 <section>
                     {songData.map((currSong, idx) => {
                         return(
