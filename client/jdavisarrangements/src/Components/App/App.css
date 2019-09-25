@@ -1,8 +1,16 @@
 :root {
+  --color-offblack: rgb(32, 32, 32);
+  
+  /* Davis specified colors: */
   --color-offwhite: rgb(235,235,235);
   --color-darkgrey: rgb(170,170,170);
   --color-goldenrod: rgb(227,219,138);
   --color-darkyellow: rgb(200,197,52);
+}
+
+* {
+  color: var(--color-offblack); 
+  background-color: var(--color-offwhite);
 }
 
 .App {
