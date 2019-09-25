@@ -1,3 +1,10 @@
+:root {
+  --color-offwhite: rgb(235,235,235);
+  --color-darkgrey: rgb(170,170,170);
+  --color-goldenrod: rgb(227,219,138);
+  --color-darkyellow: rgb(200,197,52);
+}
+
 .App {
   display: grid;
   grid-template-columns: 6vw, 1fr, 1fr, 1fr;
