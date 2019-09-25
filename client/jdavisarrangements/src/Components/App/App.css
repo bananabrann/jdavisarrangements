@@ -1,3 +1,33 @@
 .App {
-    display: grid;
+  display: grid;
+  grid-template-columns: 6vw, 1fr, 1fr, 1fr;
+  grid-template-rows: 10vh, 90vh, 150px;
+  grid-template-areas:
+    "header header header header"
+    "nav main main main"
+    "footer footer footer footer"
+}
+
+.App .header {
+  height: 100%;
+  background-color: lightpink;
+  grid-area: header;
+}
+
+.App .nav {
+  height: 100%;
+  background-color: lightgreen;
+  grid-area: nav;
+}
+
+.App .body {
+  height: 100%;
+  background-color: lightblue;
+  grid-area: main;
+}
+
+.App .footer {
+  height: 100%;
+  background-color: coral;
+  grid-area: footer;
 }

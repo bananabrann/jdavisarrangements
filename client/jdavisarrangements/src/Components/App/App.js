@@ -20,11 +20,15 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <nav>
-                    <Nav />
-                </nav>
+                <section className="header">
+                    <p>Header be here</p>
+                </section>
 
-                <body>
+                <section className="nav">
+                    <Nav />
+                </section>
+
+                <section className="body">
                     <Route
                         path="/"
                         exact
@@ -55,11 +59,11 @@ class App extends Component {
                         component={Products}
                         render={routerProps => <Products />}
                     />
-                </body>
+                </section>
 
-                <footer>
+                <section className="footer">
                     <Footer />
-                </footer>
+                </section>
                 {/* <h1>{this.state.song.name}</h1>
                 <p>{this.state.song.composer}</p> */}
             </div>
